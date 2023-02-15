@@ -385,3 +385,4 @@ export function createService<T>(config: Config<T>) {
 
   return config.endpoints;
 }
+export default { createService, endpoint };

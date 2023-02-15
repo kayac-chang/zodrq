@@ -1,8 +1,7 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
+  "extends": "@sindresorhus/tsconfig",
   "include": ["**/*.ts"],
   "compilerOptions": {
-    "outDir": "dist",
-    "lib": ["es2022", "dom"]
+    "outDir": "dist"
   }
 }
