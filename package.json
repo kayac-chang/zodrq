@@ -1,0 +1,48 @@
+{
+  "name": "zodrq",
+  "version": "0.1.1",
+  "author": "kayac-chang <egg734631@gmail.com>",
+  "description": "type safety request build with zod",
+  "repository": "https://github.com/kayac-chang/zodrq",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -d",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^1.0.1",
+    "@types/node": "^18.13.0",
+    "eslint": "^8.34.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "path-to-regexp": "^6.2.1",
+    "zod": "^3.20.6"
+  },
+  "keywords": [
+    "request",
+    "fetch",
+    "type",
+    "types",
+    "check",
+    "checking",
+    "guard",
+    "guards",
+    "validate",
+    "validation",
+    "utility",
+    "util"
+  ],
+  "engines": {
+    "node": ">=14.16"
+  }
+}
