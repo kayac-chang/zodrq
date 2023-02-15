@@ -1,6 +1,6 @@
 {
   "name": "zodrq",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "author": "kayac-chang <egg734631@gmail.com>",
   "description": "type safety request build with zod",
   "repository": "https://github.com/kayac-chang/zodrq",
@@ -12,6 +12,9 @@
       "default": "./dist/index.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsc -d",
