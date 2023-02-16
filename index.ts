@@ -368,10 +368,18 @@ export function createService<T>(config: Config<T>) {
       if (!value) return;
 
       if (typeof value === "function" && value.name === "execute") {
-        (value as any).fetcher = config.fetcher;
-        (value as any).searchParamsSerializer = config.searchParamsSerializer;
-        (value as any).headers = config.headers;
-        (value as any).baseURL = config.baseURL;
+        if (config.fetcher) {
+          (value as any).fetcher = config.fetcher;
+        }
+        if (config.searchParamsSerializer) {
+          (value as any).searchParamsSerializer = config.searchParamsSerializer;
+        }
+        if (config.headers) {
+          (value as any).headers = config.headers;
+        }
+        if (config.baseURL) {
+          (value as any).baseURL = config.baseURL;
+        }
         return;
       }
 
