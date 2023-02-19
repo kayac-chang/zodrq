@@ -318,6 +318,9 @@ function handleResponse<R, Return>(
   option: BaseOption & ResponseOption<R, Return>
 ) {
   return async (response: Response) => {
+    const buffer = await response.clone().arrayBuffer();
+    if (buffer.byteLength <= 0) return;
+
     switch (option.accept) {
       case "json":
         return response
