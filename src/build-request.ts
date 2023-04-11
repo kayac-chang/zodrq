@@ -17,7 +17,9 @@ async function buildRequest(option: BuildRequestOption, props: unknown) {
     parsePayload(option, props),
     //  parse headers
     parseHeaders(option),
-  ]).then(([url, body]) => new Request(url, { body }));
+  ]).then(
+    ([url, body, headers]) => new Request(url, { ...option, headers, body })
+  );
 }
 
 export default buildRequest;
