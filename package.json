@@ -1,6 +1,6 @@
 {
   "name": "zodrq",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "kayac-chang <egg734631@gmail.com>",
   "description": "type safety request build with zod",
   "repository": "https://github.com/kayac-chang/zodrq",
