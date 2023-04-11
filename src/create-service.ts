@@ -1,4 +1,4 @@
-import type { EndpointOption } from "./endpoint";
+import type { EndpointOption } from "./endpoint.js";
 
 export type Config<Service> = Omit<EndpointOption, "path"> & {
   endpoints: {

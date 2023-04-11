@@ -2,7 +2,10 @@
   "extends": "@tsconfig/node-lts/tsconfig.json",
   "include": ["./src"],
   "compilerOptions": {
+    "module": "node16",
+    "moduleResolution": "node16",
+    "moduleDetection": "force",
     "lib": ["DOM", "DOM.Iterable", "ES2020"],
-    "outDir": "dist"
+    "allowSyntheticDefaultImports": true
   }
 }

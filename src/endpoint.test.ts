@@ -1,5 +1,5 @@
 import { z } from "zod";
-import endpoint from "./endpoint";
+import endpoint from "./endpoint.js";
 
 // get <url>
 {

@@ -1,6 +1,6 @@
 import { z } from "zod";
-import endpoint from "./endpoint";
-import createService from "./create-service";
+import endpoint from "./endpoint.js";
+import createService from "./create-service.js";
 
 const service = createService({
   endpoints: {

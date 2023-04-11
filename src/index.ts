@@ -1,5 +1,5 @@
-import endpoint from "./endpoint";
-import createService from "./create-service";
+import endpoint from "./endpoint.js";
+import createService from "./create-service.js";
 
 export { endpoint, createService };
 export default { endpoint, createService };

@@ -1,8 +1,8 @@
-import type { BuildRequestOption } from "./build-request";
-import type { ResponseOption } from "./handle-response";
+import type { BuildRequestOption } from "./build-request.js";
+import type { ResponseOption } from "./handle-response.js";
 import type { ZodType } from "zod";
-import buildRequest from "./build-request";
-import handleResponse from "./handle-response";
+import buildRequest from "./build-request.js";
+import handleResponse from "./handle-response.js";
 
 const defaultFetcher = fetch;
 

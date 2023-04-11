@@ -1,9 +1,9 @@
-import parseURL from "./parse-url";
-import parsePayload from "./parse-payload";
-import parseHeaders from "./parse-headers";
-import type { ParseURLOption } from "./parse-url";
-import type { ParsePayloadOption } from "./parse-payload";
-import type { ParseHeadersOption } from "./parse-headers";
+import parseURL from "./parse-url.js";
+import parsePayload from "./parse-payload.js";
+import parseHeaders from "./parse-headers.js";
+import type { ParseURLOption } from "./parse-url.js";
+import type { ParsePayloadOption } from "./parse-payload.js";
+import type { ParseHeadersOption } from "./parse-headers.js";
 
 export type BuildRequestOption = ParseURLOption &
   ParsePayloadOption &
