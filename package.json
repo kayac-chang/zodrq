@@ -18,7 +18,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "rm -rf dist && tsc -d",
+    "build": "rm -rf dist && tsc -d -p tsconfig.build.json",
     "prepublish": "npm run build"
   },
   "devDependencies": {

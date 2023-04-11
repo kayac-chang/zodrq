@@ -1,6 +1,6 @@
 import type { EndpointOption } from "./endpoint";
 
-export type Config<Service> = EndpointOption & {
+export type Config<Service> = Omit<EndpointOption, "path"> & {
   endpoints: {
     [key in keyof Service]: Service[key];
   };
