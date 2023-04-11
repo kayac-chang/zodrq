@@ -5,13 +5,9 @@ export interface ParsePayloadOption<Body = unknown> {
   body?: ZodType<Body>;
 }
 
-function contentType(option: ParsePayloadOption) {
+function contentType(_option: ParsePayloadOption) {
   return (body: unknown) => {
-    if (option.contentType === "json") {
-      return JSON.stringify(body);
-    }
-
-    throw new Error(`not support content type: ${option.contentType}`);
+    return JSON.stringify(body);
   };
 }
 
